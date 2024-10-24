@@ -8,6 +8,9 @@ import { commentsComponent } from './comments/comment.component';
 import { FormComponent } from './FormComponent/Form.component';
 import { ReactiveFormComponent } from './ReactiveForm/ReactiveForm.component';
 import { ValidatorFormComponent } from './ValidatorForm/ValidatorForm.component';
+import { CarComponent } from './carComponent/carComponent.component';
+import { CarComponentConstructorBaseDI } from './carComponent_constructorBased_DI/CarComponentConstDI.component';
+import { PipeComponent } from './pipeComponent/PipeComponent.component';
 
 interface EachStudent{
   studentName:string;
@@ -24,7 +27,8 @@ interface user{
   standalone: true,
   imports: [
     FormsModule,CommonModule,StudentComponent,ChildComponent,commentsComponent,NgOptimizedImage,
-    RouterOutlet,RouterLink,RouterLinkActive,FormComponent,ReactiveFormComponent,ValidatorFormComponent
+    RouterOutlet,RouterLink,RouterLinkActive,FormComponent,ReactiveFormComponent,ValidatorFormComponent,
+    CarComponent,CarComponentConstructorBaseDI,PipeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
